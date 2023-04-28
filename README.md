@@ -6,17 +6,11 @@ A kafka producer example
 First run the container dependencies in docker-compose
 
 ```shell
-./gradlew bootRun
+docker-compose -f src/main/resources/docker-compose.yaml up
 ```
 
 After run spring application
 
 ```shell
 ./gradlew bootRun
-```
-
-
-# Create image
-```shell
-./gradlew jib --image=kafka-producer
 ```
